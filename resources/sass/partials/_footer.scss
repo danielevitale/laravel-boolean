@@ -1,0 +1,25 @@
+.footer {
+  height: 300px;
+  display: flex;
+  background-color: white;
+
+  .colonna {
+    width: 25%;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      list-style: none;
+
+      a {
+        color: #1b3c59;
+        font-size: 13px;
+        text-decoration: none;
+        background-color: transparent;
+        font-family: Rubik,sans-serif;
+      }
+    }
+  }
+}
