@@ -1,0 +1,63 @@
+// Position relative per i riquadri verdi
+.container {
+  position: relative;
+
+  // Primo riquadro verde
+  .riquadro_green {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    background-color: $background_verde;
+    z-index: -1;
+
+    // Secondo riquadro verde ruotato
+    &.ruotato {
+      height: 133%;
+      right: 140px;
+      width: 485px;
+      transform: rotate(23deg);
+    }
+  }
+
+  .container_home {
+    width: $width_common;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+
+    // Titolo
+    .left {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h1 {
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 60px;
+        color: $background_verde;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    // Immagine
+    .right {
+      width: 60%;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 80%;
+        margin-left: 50px;
+      }
+    }
+  }
+}

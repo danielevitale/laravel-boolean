@@ -12,4 +12,6 @@
 */
 
 
-Route::get('laravel-boolean', 'HomeController@main');
+Route::get('/', 'HomeController@home')->name('home');
+Route::get('privacy-policy', 'HomeController@privacy_policy')->name('privacy');
+Route::get('lavora-con-noi', 'HomeController@lavora')->name('lavora');
